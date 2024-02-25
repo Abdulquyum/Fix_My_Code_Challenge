@@ -17,7 +17,7 @@ ARGV.each do |arg|
     i = 0
     l = result.size
     while !is_inserted && i < l do
-        if (i_arg >= 0 && result[i] < i_arg) || (i_arg < 0 && result[i] <= i_arg)
+        if i_arg >= 0 && result[i] < i_arg
             i += 1
         else
             result.insert(i - 1, i_arg)
